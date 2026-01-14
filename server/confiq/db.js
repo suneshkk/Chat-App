@@ -10,6 +10,6 @@ export const connectDB = async () => {
       console.log("DB connected successfully")
 
   } catch (error) {
-    console.log(error);
+    console.log(error,"<<<<<<'DB CONNECTIONS FILED'>>>>>> please check importet .env veriable");
   }
 };

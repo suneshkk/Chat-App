@@ -37,6 +37,7 @@ const userScheema = new mongoose.Schema(
     },
     photo: {
       required: true,
+    default:"https://tse1.mm.bing.net/th/id/OIP.0AKX_YJS6w3y215EcZ-WAAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
     },
   },
   { timestamps: true }

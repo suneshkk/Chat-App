@@ -49,6 +49,10 @@ const adminScheema = new mongoose.Schema(
           "Password must be at least 8 characters long and contain at least one letter and one number",
       },
     },
+    photo:{
+      type:string,
+      default:"https://tse1.mm.bing.net/th/id/OIP.0AKX_YJS6w3y215EcZ-WAAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
+    },
     role:{
         type:string,
         required:true,
