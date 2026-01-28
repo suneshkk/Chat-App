@@ -34,7 +34,7 @@ const adminScheema = new mongoose.Schema(
       },
     },
     password: {
-      type: string,
+      type: String,
       required: true,
       trime: true,
       validate: {
