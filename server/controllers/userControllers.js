@@ -3,17 +3,12 @@ import { User } from "../model/userModel.js";
 
 export const userSignUp = (req, res, next) => {
     try {
-        console.log(req.body);
+        console.log(req.body,"body")
         const { name, email, password, phone, profilepic } = req.body;
 
         if (!name || !email || !password || !phone) {
             return res.status(400).json({ success: false, message: "All fields required" })
         }//checking all fields are present or not
-
-        const isPhoneExist = User.findOne({ phone: phone });
-        if (isPhoneExist) {
-            return res.status(400).json({ success: false, message: "You entered phone is already exist " })
-        }//checking phone already exist or not
 
         const isEmailExist = User.findOne({ email: email });
         if (isEmailExist) {
